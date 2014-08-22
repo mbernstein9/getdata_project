@@ -8,21 +8,21 @@ Machine Learning DB into a a final data file named "final_text.txt".
 The processed data set aggregates the mean of each observation of the fields
 calculated by the study authors by each subject participating and the corresponding
 activity performed to obtain the measurement.
-===================================================================================
+
 
 The R script will extract the folder prepared by the study authors at the UCI site.
 The final data is prepared as follows:
-  -Utilize the calculated fileds in the "X_train" and "X_test" files, which are processed from 
+  - Utilize the calculated fileds in the "X_train" and "X_test" files, which are processed from 
     the raw measurements by the study authors.
-  -Merge these files, which inclue the traing and test data sets for all calculated fields
-  -attach the subject labels from the "subject_train" and "subject_test", which indicate the
+  - Merge these files, which inclue the traing and test data sets for all calculated fields
+  - attach the subject labels from the "subject_train" and "subject_test", which indicate the
     from the corresponding observation
-  -attach the activity labels from the "activity_labels" file, which indicate the activity
+  - attach the activity labels from the "activity_labels" file, which indicate the activity
     performed during the observation
-  -reduce the data down to only the mean and standard deviation measurement calculation.
-  -aggregate the values of the retained calculated measurements by activity and by subject
+  - reduce the data down to only the mean and standard deviation measurement calculation.
+  - aggregate the values of the retained calculated measurements by activity and by subject
 
-===============================================================================================
+
 
 
 The final data final has four fields
