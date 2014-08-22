@@ -69,11 +69,11 @@ data_reduce<-data_all_label[,kept_cols]
 ##mean of each variable for each subject and activity
 
 data_reshape<-melt(data_reduce,id=names(data_reduce)[1:2],measure.vars=names(data_reduce)[3:ncol(data_reduce)],
-                factorsAsString=FALSE)
+                factorsAsString=FALSE,variable.name="measurement",value.name="mean_value")
 
 ##summarize and sort
-data_final<-arrange(aggregate(value~subject_label+activity_label+variable,FUN=mean,data=data_reshape),
-                      subject_label,activity_label,variable)
+data_final<-arrange(aggregate(mean_value~subject_label+activity_label+measurement,FUN=mean,data=data_reshape),
+                      subject_label,activity_label,measurement)
 
 ##write final data to file
 
