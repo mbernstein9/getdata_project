@@ -27,18 +27,18 @@ The final data is prepared as follows:
 
 The final data final has four fields
   
-  -subject_label: indicate the individual participating in the study
+  - subject_label: indicate the individual participating in the study
     integers 1-30 
   
-  -activity_label: indicate the various activity perform during the measurment
-    "WALKING"
-    "WALKING_UPSTAIRS"
-    "WALKING_DOWNSTAIRS"
-    "SITTING"
-    "STANDING"
-    "LAYING"
-=================================================================================================================
-  -measurment: indicate the calculated measurement from the activity
+  - activity_label: indicate the various activity perform during the measurment
+    - "WALKING"
+    - "WALKING_UPSTAIRS"
+    - "WALKING_DOWNSTAIRS"
+    - "SITTING"
+    - "STANDING"
+    - "LAYING"
+
+  - measurment: indicate the calculated measurement from the activity
     "tBodyAcc-mean()-X"           "tBodyAcc-mean()-Y"       "tBodyAcc-mean()-Z"           
     "tBodyAcc-std()-X"            "tBodyAcc-std()-Y"        "tBodyAcc-std()-Z"            
     "tGravityAcc-mean()-X"        "tGravityAcc-mean()-Y"    "tGravityAcc-mean()-Z"        
@@ -65,8 +65,8 @@ The final data final has four fields
     "fBodyBodyGyroMag-mean()"     "fBodyBodyGyroMag-std()"     
     "fBodyBodyGyroJerkMag-mean()" "fBodyBodyGyroJerkMag-std()"
     
-  ===========================================================================  
-    mean_value: the mean of all measurements for a given subject and activity
+ 
+    - mean_value: the mean of all measurements for a given subject and activity
       real number from [-1,1]
     
     
