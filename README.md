@@ -8,7 +8,7 @@ Machine Learning DB into a a final data file named "final_text.txt".
 The processed data set aggregates the mean of each observation of the fields
 calculated by the study authors by each subject participating and the corresponding
 activity performed to obtain the measurement.
-
+===================================================================================
 
 The R script will extract the folder prepared by the study authors at the UCI site.
 The final data is prepared as follows:
@@ -22,7 +22,7 @@ The final data is prepared as follows:
   -reduce the data down to only the mean and standard deviation measurement calculation.
   -aggregate the values of the retained calculated measurements by activity and by subject
 
-
+===============================================================================================
 
 
 The final data final has four fields
@@ -37,7 +37,7 @@ The final data final has four fields
     "SITTING"
     "STANDING"
     "LAYING"
-  
+=================================================================================================================
   -measurment: indicate the calculated measurement from the activity
     "tBodyAcc-mean()-X"           "tBodyAcc-mean()-Y"       "tBodyAcc-mean()-Z"           
     "tBodyAcc-std()-X"            "tBodyAcc-std()-Y"        "tBodyAcc-std()-Z"            
@@ -65,7 +65,7 @@ The final data final has four fields
     "fBodyBodyGyroMag-mean()"     "fBodyBodyGyroMag-std()"     
     "fBodyBodyGyroJerkMag-mean()" "fBodyBodyGyroJerkMag-std()"
     
-    
+  ===========================================================================  
     mean_value: the mean of all measurements for a given subject and activity
       real number from [-1,1]
     
